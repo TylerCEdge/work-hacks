@@ -1,0 +1,24 @@
+/* Set box-sizing - ignore */
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* Layout For Smaller Screens */
+img {
+	display: block;
+	margin: 0 auto 0 auto; /* Centred */
+	width: 100%;
+}
+
+/* Layout For Larger Screens */
+@media screen and (min-width: 40em) {
+	img {
+		padding: 0 2em 0 2em;
+		width: 66.6%;
+	}
+}
